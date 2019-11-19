@@ -1,6 +1,6 @@
 {
   "name": "dodod",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
   "author": "Nick Earwood <nearwood@gmail.com>",
   "license": "MIT",
@@ -14,8 +14,7 @@
     "julian",
     "day"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
