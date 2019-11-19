@@ -1,0 +1,20 @@
+{
+  "name": "julian-day",
+  "version": "0.1.0",
+  "description": "DoD (Navy) Julian Day converter",
+  "author": "Nick Earwood <nearwood@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "dod",
+    "navy",
+    "julian",
+    "day"
+  ],
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
