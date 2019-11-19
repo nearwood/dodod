@@ -1,6 +1,6 @@
 {
   "name": "dodod",
-  "version": "0.2.0-alpha",
+  "version": "0.2.0",
   "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
   "author": "Nick Earwood <nearwood@gmail.com>",
   "license": "MIT",

@@ -1,4 +1,4 @@
-import getJulianDate from '../src/index';
+import getOrdinalDatetime from '../src/index';
 
 const regularYearDateMatrix = [{
   date: new Date(2019, 10, 19, 10, 14),
@@ -24,7 +24,7 @@ const leapYearDateMatrix = [{
 
 test('Regular Years', () => {
   regularYearDateMatrix.forEach(test => {
-    const testDateResult = getJulianDate(test.date);
+    const testDateResult = getOrdinalDatetime(test.date);
     expect(testDateResult.length).toBe(8);
     expect(testDateResult).toBe(test.string);
   });
@@ -32,8 +32,16 @@ test('Regular Years', () => {
 
 test('Leap Years', () => {
   leapYearDateMatrix.forEach(test => {
-    const testDateResult = getJulianDate(test.date);
+    const testDateResult = getOrdinalDatetime(test.date);
     expect(testDateResult.length).toBe(8);
     expect(testDateResult).toBe(test.string);
   });
+});
+
+test('Invalid arguments throw', () => {
+  expect(() => getOrdinalDatetime("Banana")).toThrow();
+  expect(() => getOrdinalDatetime(42)).toThrow();
+  expect(() => getOrdinalDatetime(3.14)).toThrow();
+  expect(() => getOrdinalDatetime(null)).toThrow();
+  expect(() => getOrdinalDatetime(new Date("Banana"))).toThrow();
 });
