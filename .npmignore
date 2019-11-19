@@ -1,0 +1,7 @@
+.github/
+tests/
+src/
+
+webpack.config.js
+babel.config.js
+.gitignore
