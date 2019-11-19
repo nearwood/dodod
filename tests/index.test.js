@@ -1,4 +1,4 @@
-import getJulianDate from './index';
+import getJulianDate from '../src/index';
 
 const regularYearDateMatrix = [{
   date: new Date(2019, 10, 19, 10, 14),

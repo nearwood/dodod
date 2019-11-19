@@ -1,24 +1,30 @@
 {
   "name": "dodod",
-  "version": "0.1.0",
+  "version": "0.2.0-alpha",
   "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
   "author": "Nick Earwood <nearwood@gmail.com>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
+    "build": "webpack",
     "test": "jest"
   },
   "keywords": [
     "dod",
     "navy",
     "julian",
-    "day"
+    "day",
+    "date",
+    "ordinal"
   ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
-    "jest": "^24.9.0"
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
