@@ -1,7 +1,7 @@
 {
-  "name": "julian-day",
-  "version": "0.1.0",
-  "description": "DoD (Navy) Julian Day converter",
+  "name": "dodod",
+  "version": "1.0.0",
+  "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
   "author": "Nick Earwood <nearwood@gmail.com>",
   "license": "MIT",
   "main": "index.js",

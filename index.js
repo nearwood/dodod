@@ -1,8 +1,8 @@
 
 /**
-* Returns a "Julian Day" string from a provided date, or `new Date()` if not provided.
-* @param {Date} date - The date to calculate the Julian Day from.
-* @return {string} - Formatted Julian date string
+* Returns a Ordinal Date string from a provided date, or `new Date()` if not provided.
+* @param {Date} date - The date to calculate the Julian Day from
+* @return {string} - Formatted, fixed length ordinal date string
 */
 export default function getJulianDay(date = new Date()) {
   const startOfYear = new Date(date.getFullYear(), 0, 1, 0, 0, 0); //January (index 0), 1, 00:00:00
