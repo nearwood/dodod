@@ -1,6 +1,6 @@
-import getOrdinalDatetime from '../src/index';
+import { getOrdinalDatetime, getOrdinalDate } from '../dist/dodod';
 
-const regularYearDateMatrix = [{
+const regularYearDatetimeMatrix = [{
   date: new Date(2019, 10, 19, 10, 14),
   string: "93231014"
 }, {
@@ -11,7 +11,7 @@ const regularYearDateMatrix = [{
   string: "93231014"
 }];
 
-const leapYearDateMatrix = [{
+const leapYearDatetimeMatrix = [{
   date: new Date(2000, 0, 1, 2, 3),
   string: "00010203"
 }, {
@@ -22,8 +22,24 @@ const leapYearDateMatrix = [{
   string: "23661213"
 }];
 
+const dateMatrix = [{
+  date: new Date(2000, 0, 1, 2, 3),
+  string: "0001"
+},{
+  date: new Date(2019, 10, 19, 10, 14),
+  string: "9323"
+}];
+
+test('getOrdinalDate', () => {
+  dateMatrix.forEach(test => {
+    const testDateResult = getOrdinalDate(test.date);
+    expect(testDateResult.length).toBe(4);
+    expect(testDateResult).toBe(test.string);
+  });
+});
+
 test('Regular Years', () => {
-  regularYearDateMatrix.forEach(test => {
+  regularYearDatetimeMatrix.forEach(test => {
     const testDateResult = getOrdinalDatetime(test.date);
     expect(testDateResult.length).toBe(8);
     expect(testDateResult).toBe(test.string);
@@ -31,7 +47,7 @@ test('Regular Years', () => {
 });
 
 test('Leap Years', () => {
-  leapYearDateMatrix.forEach(test => {
+  leapYearDatetimeMatrix.forEach(test => {
     const testDateResult = getOrdinalDatetime(test.date);
     expect(testDateResult.length).toBe(8);
     expect(testDateResult).toBe(test.string);

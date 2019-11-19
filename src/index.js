@@ -4,7 +4,7 @@
 * @param {Date} [date=new Date()] - The date to convert
 * @return {string} - Formatted, fixed length ordinal date string (eg. "91501230")
 */
-export default function getOrdinalDatetime(date = new Date()) {
+export function getOrdinalDatetime(date = new Date()) {
   const { year, days, hour, min } = toOrdinalDatetimeObject(date);
   return `${year}${days}${hour}${min}`;
 }
