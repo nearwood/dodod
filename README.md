@@ -13,13 +13,13 @@ See this reference which the code and all tests are based on: https://landweb.mo
 ```
 import dodod from 'dodod';
 
-let j = dodod(new Date(2019, 10, 19, 10, 14));
-console.log(j); // "93231014"
+let j = dodod(new Date(2019, 10, 19, 16, 14));
+console.log(j); // "93231614"
 
 /* Where:
  *   "9"   // Last digit of year
  * + "323" // Ordinal day in year
- * + "10"  // Hour (24h format)
+ * + "16"  // Hour (24h format)
  * + "14"  // Minute
  */
 ```

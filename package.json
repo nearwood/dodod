@@ -1,12 +1,13 @@
 {
   "name": "dodod",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
-  "author": "Nick Earwood <nearwood@gmail.com>",
+  "author": "Nick Earwood <nearwood@gmail.com> (https://nearwood.dev/)",
+  "repository": "https://github.com/nearwood/dodod",
   "license": "MIT",
   "main": "dist/dodod.js",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "build": "webpack",
     "pretest": "npm run build",
     "test": "jest"

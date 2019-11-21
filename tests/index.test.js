@@ -1,19 +1,25 @@
 import { getOrdinalDatetime, getOrdinalDate } from '../dist/dodod';
 
 const regularYearDatetimeMatrix = [{
+  date: new Date(2019, 0, 1, 0, 0),
+  string: "90000000"
+}, {
   date: new Date(2019, 10, 19, 10, 14),
   string: "93231014"
 }, {
-  date: new Date(2009, 10, 19, 10, 14),
-  string: "93231014"
+  date: new Date(2009, 10, 19, 0, 14),
+  string: "93230014"
 }, {
-  date: new Date(1999, 10, 19, 10, 14),
-  string: "93231014"
+  date: new Date(1999, 10, 19, 16, 14),
+  string: "93231614"
 }];
 
 const leapYearDatetimeMatrix = [{
-  date: new Date(2000, 0, 1, 2, 3),
-  string: "00010203"
+  date: new Date(2000, 0, 1, 0, 0),
+  string: "00000000"
+}, {
+  date: new Date(2000, 4, 2, 12, 34),
+  string: "01231234"
 }, {
   date: new Date(2008, 5, 7, 8, 9),
   string: "81590809"
