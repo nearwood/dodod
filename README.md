@@ -8,6 +8,8 @@ Because npm I named it something trendy and cryptic sounding.
 
 See this reference which the code and all tests are based on: https://landweb.modaps.eosdis.nasa.gov/browse/calendar.html
 
+[![npm version](https://badge.fury.io/js/dodod.svg)](https://www.npmjs.com/package/dodod)
+
 ## Usage
 
 ```
