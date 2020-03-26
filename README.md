@@ -8,15 +8,24 @@ Because npm I named it something trendy and cryptic sounding.
 
 See this reference which the code and all tests are based on: https://landweb.modaps.eosdis.nasa.gov/browse/calendar.html
 
-[![npm version](https://badge.fury.io/js/dodod.svg)](https://www.npmjs.com/package/dodod)
+## Badges
+
+NPM | Build | Test Coverage
+--- | --- | ---
+| [![npm version](https://badge.fury.io/js/dodod.svg)](https://www.npmjs.com/package/dodod) | ![Publish NPM Package](https://github.com/nearwood/dodod/workflows/Node.js%20Package/badge.svg) | [![Coverage Status](https://coveralls.io/repos/github/nearwood/dodod/badge.svg?branch=master)](https://coveralls.io/github/nearwood/dodod?branch=master)
 
 ## Usage
 
 ```
-import dodod from 'dodod';
+import { getOrdinalDatetime, getOrdinalDate } from 'dodod';
 
-let j = dodod(new Date(2019, 10, 19, 16, 14));
+const date = new Date(2019, 10, 19, 16, 14);
+
+let j = getOrdinalDatetime(date);
+let k = getOrdinalDate(date);
+
 console.log(j); // "93231614"
+console.log(k); // "9323"
 
 /* Where:
  *   "9"   // Last digit of year
