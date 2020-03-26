@@ -1,4 +1,6 @@
-import { getOrdinalDatetime, getOrdinalDate } from '../dist/dodod';
+
+//import { getOrdinalDatetime, getOrdinalDate } from '../dist/dodod';
+import { getOrdinalDatetime, getOrdinalDate } from '../src/index';
 
 const regularYearDatetimeMatrix = [{
   date: new Date(2019, 0, 1, 0, 0),
@@ -44,7 +46,7 @@ test('getOrdinalDate', () => {
   });
 });
 
-test('Regular Years', () => {
+test('getOrdinalDatetime', () => {
   regularYearDatetimeMatrix.forEach(test => {
     const testDateResult = getOrdinalDatetime(test.date);
     expect(testDateResult.length).toBe(8);
@@ -61,9 +63,14 @@ test('Leap Years', () => {
 });
 
 test('Invalid arguments throw', () => {
+  expect(() => getOrdinalDate()).not.toThrow();
+  expect(() => getOrdinalDatetime()).not.toThrow();
+  expect(() => getOrdinalDate("Banana")).toThrow();
   expect(() => getOrdinalDatetime("Banana")).toThrow();
+  expect(() => getOrdinalDate(42)).toThrow();
   expect(() => getOrdinalDatetime(42)).toThrow();
-  expect(() => getOrdinalDatetime(3.14)).toThrow();
+  expect(() => getOrdinalDate(null)).toThrow();
   expect(() => getOrdinalDatetime(null)).toThrow();
+  expect(() => getOrdinalDate(new Date("Banana"))).toThrow();
   expect(() => getOrdinalDatetime(new Date("Banana"))).toThrow();
 });
