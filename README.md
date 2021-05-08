@@ -10,9 +10,9 @@ See this reference which the code and all tests are based on: https://landweb.mo
 
 ## Badges
 
-NPM | Build | Test Coverage
---- | --- | ---
-| [![npm version](https://badge.fury.io/js/dodod.svg)](https://www.npmjs.com/package/dodod) | ![Publish NPM Package](https://github.com/nearwood/dodod/workflows/Node.js%20Package/badge.svg) | [![Coverage Status](https://coveralls.io/repos/github/nearwood/dodod/badge.svg?branch=master)](https://coveralls.io/github/nearwood/dodod?branch=master)
+NPM | Build | Test Coverage | Dependencies
+--- | --- | --- | ---
+| [![npm version](https://badge.fury.io/js/dodod.svg)](https://www.npmjs.com/package/dodod) | ![Publish NPM Package](https://github.com/nearwood/dodod/workflows/Node.js%20Package/badge.svg) | [![Coverage Status](https://coveralls.io/repos/github/nearwood/dodod/badge.svg?branch=master)](https://coveralls.io/github/nearwood/dodod?branch=master) | `0`
 
 ## Usage
 
