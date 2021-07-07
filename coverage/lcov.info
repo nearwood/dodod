@@ -1,5 +1,5 @@
 TN:
-SF:src\index.js
+SF:src/index.js
 FN:7,getOrdinalDatetime
 FN:17,getOrdinalDate
 FN:22,toOrdinalDatetimeObject
