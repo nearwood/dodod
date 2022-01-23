@@ -1,6 +1,6 @@
 {
   "name": "dodod",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "US DoD (specifically Navy) Ordinal Date (aka Julian Date) converter",
   "author": "Nick Earwood <nearwood@gmail.com> (https://nearwood.dev/)",
   "repository": "https://github.com/nearwood/dodod",
@@ -22,13 +22,13 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/node": "^7.14.7",
-    "@babel/preset-env": "^7.14.7",
-    "babel-loader": "^8.2.2",
-    "jest": "^27.0.6",
-    "webpack": "^5.43.0",
-    "webpack-cli": "^4.7.2"
+    "@babel/core": "^7.16.12",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.4.7",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1"
   },
   "jest": {
     "coverageReporters": [
